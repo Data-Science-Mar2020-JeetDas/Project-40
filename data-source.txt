@@ -1,0 +1,9 @@
+Health systems --> Health service delivery
+
+Project-40 : Hospital beds (per 10 000 population) using Python
+
+  https://www.who.int/data/gho/data/indicators/indicator-details/GHO/hospital-beds-(per-10-000-population)
+  
+  
+  
+  
