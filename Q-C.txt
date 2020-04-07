@@ -1,0 +1,86 @@
+# Question - C : print available country
+
+country = df.groupby(['Location'])[['Period']].count()
+print("---------------------------------")
+print("\tAvailable country names : ")
+print("-------------------------------")
+print(country)
+print("-------------------------------")
+count = 0
+for row in range(len(country)): 
+        count = count+1
+print("total no. of country = ",count)        
+print("-----------------------------\n")
+
+---------------------------------
+        Available country names : 
+-------------------------------
+                                                    Period
+Location                                                  
+Afghanistan                                             16
+Albania                                                 13
+Algeria                                                  2
+Angola                                                   1
+Antigua and Barbuda                                      4
+Argentina                                                6
+Armenia                                                 15
+Australia                                                2
+Austria                                                 14
+Azerbaijan                                              14
+Bahamas                                                  6
+Bahrain                                                 15
+Bangladesh                                               2
+Barbados                                                 5
+Belarus                                                 14
+Belgium                                                 15
+Belize                                                   6
+Benin                                                    2
+Bhutan                                                   1
+Bolivia (Plurinational State of)                         5
+Bosnia and Herzegovina                                  14
+Botswana                                                 2
+Brazil                                                   7
+Brunei Darussalam                                        2
+Bulgaria                                                14
+Burkina Faso                                             2
+Burundi                                                  3
+Cabo Verde                                               2
+Cambodia                                                 2
+Cameroon                                                 2
+                                                   ...
+Sri Lanka                                                1
+Sudan                                                    3
+Sudan (until 2011)                                      11
+Suriname                                                 3
+Sweden                                                  14
+Switzerland                                             14
+Syrian Arab Republic                                    15
+Tajikistan                                              14
+Thailand                                                 1
+The former Yugoslav Republic of Macedonia               14
+Timor-Leste                                              1
+Togo                                                     2
+Trinidad and Tobago                                      7
+Tunisia                                                 16
+Turkey                                                  14
+Turkmenistan                                            14
+Tuvalu                                                   1
+Uganda                                                   2
+Ukraine                                                 14
+United Arab Emirates                                    14
+United Kingdom of Great Britain and Northern Ir...      14
+United Republic of Tanzania                              2
+United States of America                                 5
+Uruguay                                                  4
+Uzbekistan                                              14
+Venezuela (Bolivarian Republic of)                       4
+Viet Nam                                                 2
+Yemen                                                   15
+Zambia                                                   2
+Zimbabwe                                                 2
+
+[182 rows x 1 columns]
+-------------------------------
+total no. of country =  182
+-----------------------------
+
