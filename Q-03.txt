@@ -1,0 +1,368 @@
+
+#******************* Question - :Plot-3: 8-11 :2008-2011  ********************
+
+
+df1 = df[df.Period == 2008]
+print("\n\n--------------[ OUTPUT for 2008 ]----------------------\n\n")
+print(df1[['Location','Period','First Tooltip']])
+
+df2 = df[df.Period == 2009]
+print("\n\n--------------[ OUTPUT for 2009 ]----------------------\n\n")
+print(df2[['Location','Period','First Tooltip']])
+
+df3 = df[df.Period == 2010]
+print("\n\n--------------[ OUTPUT for 2010 ]----------------------\n\n")
+print(df3[['Location','Period','First Tooltip']])
+
+df4 = df[df.Period == 2011]
+print("\n\n--------------[ OUTPUT for 2011 ]----------------------\n\n")
+print(df4[['Location','Period','First Tooltip']])
+
+i = np.arange(len(df1['Location']))
+print(i)
+
+i1 = np.arange(len(df2['Location']))
+print(i1)
+
+i2 = np.arange(len(df3['Location']))
+print(i2)
+
+i3 = np.arange(len(df4['Location']))
+print(i3)
+
+#--------------- plot ----------------------
+
+plt.title('Question - : slot-3 : 2008-2011')
+plt.xlabel("Country sl. no --- >")
+plt.ylabel("Number(per 10 000 population) --- >")
+
+plt.plot(i,df1['First Tooltip'],
+            marker=7,
+            markersize=10,
+            linestyle='dashed',
+            label="[1] 2008")
+
+plt.plot(i1,df2['First Tooltip'],
+            marker='*',
+            markersize=10,
+            linestyle='dashed',
+            label="[2] 2009")
+
+plt.plot(i2,df3['First Tooltip'],
+            marker='+',
+            markersize=10,
+            linestyle='dashed',
+            label="[3] 2010")
+
+plt.plot(i3,df4['First Tooltip'],
+            marker='o',
+            markersize=10,
+            linestyle='dashed',
+            label="[4] 2011")
+
+
+plt.legend()
+plt.show()
+
+
+
+--------------[ OUTPUT for 2008 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+7                                           Afghanistan    2008           4.20
+48                                              Armenia    2008          38.21
+64                                              Austria    2008          76.93
+78                                           Azerbaijan    2008          76.75
+92                                              Bahamas    2008          32.00
+99                                              Bahrain    2008          19.70
+120                                             Belarus    2008         111.20
+135                                             Belgium    2008          65.74
+163                              Bosnia and Herzegovina    2008          33.52
+173                                            Botswana    2008          18.00
+188                                            Bulgaria    2008          64.94
+203                                          Cabo Verde    2008          21.00
+212                                              Canada    2008          34.00
+236                                          Costa Rica    2008          12.00
+244                                             Croatia    2008          54.76
+264                                              Cyprus    2008          37.63
+279                                             Czechia    2008          71.84
+295                                             Denmark    2008          35.74
+332                                               Egypt    2008          20.80
+357                                             Estonia    2008          56.17
+369                                            Ethiopia    2008           2.00
+377                                             Finland    2008          65.68
+391                                              France    2008          71.10
+400                                               Gabon    2008          13.00
+408                                             Georgia    2008          32.09
+422                                             Germany    2008          82.13
+438                                              Greece    2008          47.75
+451                                             Grenada    2008          26.00
+477                                             Hungary    2008          71.05
+492                                             Iceland    2008          39.24
+                                                ...     ...            ...
+835                                            Pakistan    2008           6.00
+849                                              Panama    2008          23.00
+867                                              Poland    2008          66.21
+878                                            Portugal    2008          33.91
+893                                               Qatar    2008          25.20
+909                                 Republic of Moldova    2008          61.06
+923                                             Romania    2008          65.72
+937                                  Russian Federation    2008          92.40
+962                                        Saudi Arabia    2008          22.10
+971                                             Senegal    2008           3.00
+976                                              Serbia    2008          55.07
+990                                            Slovakia    2008          65.57
+1004                                           Slovenia    2008          47.00
+1027                                              Spain    2008          32.23
+1042                                 Sudan (until 2011)    2008           7.30
+1059                                             Sweden    2008          28.05
+1073                                        Switzerland    2008          52.11
+1088                               Syrian Arab Republic    2008          15.40
+1102                                         Tajikistan    2008          53.01
+1117          The former Yugoslav Republic of Macedonia    2008          45.46
+1134                                Trinidad and Tobago    2008          25.00
+1143                                            Tunisia    2008          20.00
+1157                                             Turkey    2008          23.39
+1171                                       Turkmenistan    2008          76.90
+1188                                            Ukraine    2008          87.45
+1202                               United Arab Emirates    2008          18.60
+1216  United Kingdom of Great Britain and Northern I...    2008          33.56
+1241                                         Uzbekistan    2008          46.74
+1262                                              Yemen    2008           7.00
+1272                                             Zambia    2008          19.00
+
+[84 rows x 3 columns]
+
+
+--------------[ OUTPUT for 2009 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+6                                           Afghanistan    2009           4.20
+20                                              Albania    2009          30.08
+47                                              Armenia    2009          37.20
+63                                              Austria    2009          76.81
+77                                           Azerbaijan    2009          75.37
+91                                              Bahamas    2009          32.00
+98                                              Bahrain    2009          19.00
+114                                            Barbados    2009          68.00
+119                                             Belarus    2009         110.70
+134                                             Belgium    2009          65.08
+149                                              Belize    2009          11.00
+157                    Bolivia (Plurinational State of)    2009          11.00
+162                              Bosnia and Herzegovina    2009          33.25
+179                                              Brazil    2009          24.00
+187                                            Bulgaria    2009          65.97
+211                                              Canada    2009          32.00
+220                                               Chile    2009          21.00
+243                                             Croatia    2009          53.75
+258                                                Cuba    2009          59.00
+263                                              Cyprus    2009          37.40
+278                                             Czechia    2009          71.11
+294                                             Denmark    2009          34.96
+324                                             Ecuador    2009          16.00
+331                                               Egypt    2009          17.30
+346                                         El Salvador    2009          11.00
+348                                   Equatorial Guinea    2009          19.00
+356                                             Estonia    2009          53.47
+376                                             Finland    2009          62.52
+390                                              France    2009          68.62
+402                                              Gambia    2009          11.00
+                                                ...     ...            ...
+908                                 Republic of Moldova    2009          61.53
+922                                             Romania    2009          66.23
+936                                  Russian Federation    2009          90.12
+949                                         Saint Lucia    2009          15.00
+961                                        Saudi Arabia    2009          21.70
+975                                              Serbia    2009          55.50
+980                                          Seychelles    2009          39.00
+989                                            Slovakia    2009          65.05
+1003                                           Slovenia    2009          45.97
+1026                                              Spain    2009          31.86
+1041                                 Sudan (until 2011)    2009           7.30
+1052                                           Suriname    2009          26.00
+1058                                             Sweden    2009          27.59
+1072                                        Switzerland    2009          51.04
+1087                               Syrian Arab Republic    2009          15.10
+1101                                         Tajikistan    2009          51.86
+1116          The former Yugoslav Republic of Macedonia    2009          44.78
+1126                                        Timor-Leste    2009          59.00
+1133                                Trinidad and Tobago    2009          26.00
+1142                                            Tunisia    2009          20.90
+1156                                             Turkey    2009          23.98
+1170                                       Turkmenistan    2009          75.63
+1182                                             Uganda    2009           4.00
+1187                                            Ukraine    2009          94.04
+1201                               United Arab Emirates    2009          19.30
+1215  United Kingdom of Great Britain and Northern I...    2009          32.91
+1231                           United States of America    2009          31.00
+1240                                         Uzbekistan    2009          45.78
+1252                 Venezuela (Bolivarian Republic of)    2009          11.00
+1261                                              Yemen    2009           7.00
+
+[101 rows x 3 columns]
+
+
+--------------[ OUTPUT for 2010 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+5                                           Afghanistan    2010           4.30
+19                                              Albania    2010          29.89
+35                                  Antigua and Barbuda    2010          22.00
+40                                            Argentina    2010          45.00
+46                                              Armenia    2010          37.35
+62                                              Austria    2010          76.56
+76                                           Azerbaijan    2010          50.57
+90                                              Bahamas    2010          31.00
+97                                              Bahrain    2010          17.70
+113                                            Barbados    2010          66.00
+118                                             Belarus    2010         114.50
+133                                             Belgium    2010          64.73
+148                                              Belize    2010          12.00
+150                                               Benin    2010           5.00
+161                              Bosnia and Herzegovina    2010          34.01
+172                                            Botswana    2010          18.00
+178                                              Brazil    2010          24.00
+186                                            Bulgaria    2010          64.95
+197                                        Burkina Faso    2010           4.00
+202                                          Cabo Verde    2010          21.00
+206                                            Cameroon    2010          13.00
+210                                              Canada    2010          27.00
+219                                               Chile    2010          20.00
+226                                             Comoros    2010          21.60
+235                                          Costa Rica    2010          12.00
+242                                             Croatia    2010          56.21
+257                                                Cuba    2010          59.00
+262                                              Cyprus    2010          35.45
+277                                             Czechia    2010          70.12
+288               Democratic People's Republic of Korea    2010         143.00
+                                                ...     ...            ...
+907                                 Republic of Moldova    2010          61.82
+921                                             Romania    2010          62.87
+935                                  Russian Federation    2010          87.51
+953                    Saint Vincent and the Grenadines    2010          26.00
+960                                        Saudi Arabia    2010          22.04
+974                                              Serbia    2010          55.96
+988                                            Slovakia    2010          64.17
+1002                                           Slovenia    2010          45.71
+1025                                              Spain    2010          31.52
+1036                                          Sri Lanka    2010          35.10
+1040                                 Sudan (until 2011)    2010           7.20
+1051                                           Suriname    2010          31.00
+1057                                             Sweden    2010          27.26
+1071                                        Switzerland    2010          49.65
+1086                               Syrian Arab Republic    2010          15.40
+1100                                         Tajikistan    2010          50.46
+1115          The former Yugoslav Republic of Macedonia    2010          45.91
+1132                                Trinidad and Tobago    2010          21.00
+1141                                            Tunisia    2010          20.90
+1155                                             Turkey    2010          25.20
+1169                                       Turkmenistan    2010          75.70
+1181                                             Uganda    2010           5.00
+1186                                            Ukraine    2010          93.82
+1200                               United Arab Emirates    2010          19.30
+1214  United Kingdom of Great Britain and Northern I...    2010          29.53
+1225                        United Republic of Tanzania    2010           7.00
+1230                           United States of America    2010          30.00
+1239                                         Uzbekistan    2010          43.87
+1260                                              Yemen    2010           7.20
+1271                                             Zambia    2010          20.00
+
+[113 rows x 3 columns]
+
+
+--------------[ OUTPUT for 2011 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+4                                           Afghanistan    2011           4.40
+18                                              Albania    2011          26.05
+34                                  Antigua and Barbuda    2011          21.00
+39                                            Argentina    2011          45.00
+45                                              Armenia    2011          37.44
+58                                            Australia    2011          38.00
+61                                              Austria    2011          76.79
+75                                           Azerbaijan    2011          46.19
+89                                              Bahamas    2011          29.00
+96                                              Bahrain    2011          17.00
+117                                             Belarus    2011         112.50
+132                                             Belgium    2011          63.76
+147                                              Belize    2011          11.00
+156                    Bolivia (Plurinational State of)    2011          11.00
+160                              Bosnia and Herzegovina    2011          34.61
+177                                              Brazil    2011          23.00
+185                                            Bulgaria    2011          63.90
+200                                             Burundi    2011          19.00
+209                                              Canada    2011          27.00
+213                            Central African Republic    2011          10.00
+218                                               Chile    2011          21.00
+225                                            Colombia    2011          14.00
+234                                          Costa Rica    2011          12.00
+241                                             Croatia    2011          56.85
+256                                                Cuba    2011          51.00
+261                                              Cyprus    2011          35.20
+276                                             Czechia    2011          68.36
+292                                             Denmark    2011          31.32
+307                                            Djibouti    2011          14.20
+318                                  Dominican Republic    2011          17.00
+                                                ...     ...            ...
+920                                             Romania    2011          61.33
+934                                  Russian Federation    2011          85.71
+948                                         Saint Lucia    2011          16.00
+952                    Saint Vincent and the Grenadines    2011          27.00
+954                               Sao Tome and Principe    2011          29.00
+959                                        Saudi Arabia    2011          21.40
+973                                              Serbia    2011          55.89
+979                                          Seychelles    2011          36.00
+987                                            Slovakia    2011          60.51
+1001                                           Slovenia    2011          46.25
+1024                                              Spain    2011          30.92
+1039                                              Sudan    2011           8.40
+1056                                             Sweden    2011          27.06
+1070                                        Switzerland    2011          48.70
+1085                               Syrian Arab Republic    2011          15.50
+1099                                         Tajikistan    2011          48.87
+1114          The former Yugoslav Republic of Macedonia    2011          44.96
+1127                                               Togo    2011           7.00
+1140                                            Tunisia    2011          20.90
+1154                                             Turkey    2011          25.34
+1168                                       Turkmenistan    2011          74.81
+1185                                            Ukraine    2011          90.49
+1199                               United Arab Emirates    2011          10.70
+1213  United Kingdom of Great Britain and Northern I...    2011          28.99
+1229                           United States of America    2011          29.00
+1235                                            Uruguay    2011          30.00
+1238                                         Uzbekistan    2011          43.22
+1251                 Venezuela (Bolivarian Republic of)    2011           9.00
+1259                                              Yemen    2011           7.00
+1273                                           Zimbabwe    2011          17.00
+
+[113 rows x 3 columns]
+[ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+ 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49
+ 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74
+ 75 76 77 78 79 80 81 82 83]
+[  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35
+  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53
+  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89
+  90  91  92  93  94  95  96  97  98  99 100]
+[  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35
+  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53
+  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89
+  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107
+ 108 109 110 111 112]
+[  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35
+  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53
+  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89
+  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107
+ 108 109 110 111 112]
+
+In [58]:
