@@ -1,0 +1,356 @@
+
+#******************* Question - :Plot-1: 0-3 :2000-2003  ********************
+
+
+df1 = df[df.Period == 2000]
+print("\n\n--------------[ OUTPUT for 2000 ]----------------------\n\n")
+print(df1[['Location','Period','First Tooltip']])
+
+df2 = df[df.Period == 2001]
+print("\n\n--------------[ OUTPUT for 2001 ]----------------------\n\n")
+print(df2[['Location','Period','First Tooltip']])
+
+df3 = df[df.Period == 2002]
+print("\n\n--------------[ OUTPUT for 2002 ]----------------------\n\n")
+print(df3[['Location','Period','First Tooltip']])
+
+df4 = df[df.Period == 2003]
+print("\n\n--------------[ OUTPUT for 2003 ]----------------------\n\n")
+print(df4[['Location','Period','First Tooltip']])
+
+i = np.arange(len(df1['Location']))
+print(i)
+
+i1 = np.arange(len(df2['Location']))
+print(i1)
+
+i2 = np.arange(len(df3['Location']))
+print(i2)
+
+i3 = np.arange(len(df4['Location']))
+print(i3)
+
+#--------------- plot for slot-1 ----------------------
+
+plt.title('Question - : slot-1 : 2000-2003')
+plt.xlabel("Country sl. no --- >")
+plt.ylabel("Number(per 10 000 population) --- >")
+
+plt.plot(i,df1['First Tooltip'],
+            marker=7,
+            markersize=10,
+            linestyle='dashed',
+            label="[1] 2000")
+
+plt.plot(i1,df2['First Tooltip'],
+            marker='*',
+            markersize=10,
+            linestyle='dashed',
+            label="[2] 2001")
+
+plt.plot(i2,df3['First Tooltip'],
+            marker='+',
+            markersize=10,
+            linestyle='dashed',
+            label="[3] 2002")
+
+plt.plot(i3,df4['First Tooltip'],
+            marker='o',
+            markersize=10,
+            linestyle='dashed',
+            label="[4] 2003")
+
+
+plt.legend()
+plt.show()
+
+
+#******************* 
+
+
+--------------[ OUTPUT for 2000 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+15                                          Afghanistan    2000           3.00
+28                                              Albania    2000          32.63
+41                                            Argentina    2000          41.00
+56                                              Armenia    2000          64.44
+72                                              Austria    2000          79.48
+86                                           Azerbaijan    2000          86.85
+107                                             Bahrain    2000          27.50
+128                                             Belarus    2000         126.10
+143                                             Belgium    2000          77.69
+171                              Bosnia and Herzegovina    2000          33.80
+196                                            Bulgaria    2000          74.11
+252                                             Croatia    2000          61.52
+272                                              Cyprus    2000          45.36
+287                                             Czechia    2000          77.86
+303                                             Denmark    2000          42.96
+315                                            Djibouti    2000          17.50
+340                                               Egypt    2000          21.00
+365                                             Estonia    2000          70.35
+385                                             Finland    2000          75.40
+399                                              France    2000          82.23
+416                                             Georgia    2000          48.08
+430                                             Germany    2000          91.19
+446                                              Greece    2000          47.17
+465                                               Haiti    2000           7.00
+485                                             Hungary    2000          81.55
+511                          Iran (Islamic Republic of)    2000          15.90
+526                                                Iraq    2000          12.00
+540                                             Ireland    2000          61.58
+554                                              Israel    2000          37.12
+567                                               Italy    2000          47.09
+                                                ...     ...            ...
+756                                          Montenegro    2000          42.24
+771                                             Morocco    2000          11.00
+788                                         Netherlands    2000          48.26
+813                                              Norway    2000          38.15
+828                                                Oman    2000          21.80
+843                                            Pakistan    2000           6.70
+886                                            Portugal    2000          37.09
+901                                               Qatar    2000          23.60
+917                                 Republic of Moldova    2000          60.37
+931                                             Romania    2000          76.96
+945                                  Russian Federation    2000         108.90
+970                                        Saudi Arabia    2000          23.00
+998                                            Slovakia    2000          78.39
+1012                                           Slovenia    2000          53.99
+1020                                            Somalia    2000           4.20
+1035                                              Spain    2000          36.86
+1050                                 Sudan (until 2011)    2000           8.10
+1067                                             Sweden    2000          35.80
+1081                                        Switzerland    2000          62.87
+1096                               Syrian Arab Republic    2000          14.00
+1110                                         Tajikistan    2000          65.39
+1125          The former Yugoslav Republic of Macedonia    2000          50.57
+1151                                            Tunisia    2000          17.30
+1165                                             Turkey    2000          21.00
+1179                                       Turkmenistan    2000          90.75
+1196                                            Ukraine    2000          88.16
+1210                               United Arab Emirates    2000          23.80
+1224  United Kingdom of Great Britain and Northern I...    2000          40.98
+1249                                         Uzbekistan    2000          53.34
+1270                                              Yemen    2000           5.90
+
+[69 rows x 3 columns]
+
+
+--------------[ OUTPUT for 2001 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+14                                          Afghanistan    2001           3.90
+27                                              Albania    2001          32.55
+55                                              Armenia    2001          50.25
+71                                              Austria    2001          78.48
+85                                           Azerbaijan    2001          85.10
+106                                             Bahrain    2001          28.20
+127                                             Belarus    2001         125.80
+142                                             Belgium    2001          76.57
+170                              Bosnia and Herzegovina    2001          32.43
+195                                            Bulgaria    2001          72.01
+251                                             Croatia    2001          59.99
+271                                              Cyprus    2001          43.75
+286                                             Czechia    2001          77.61
+302                                             Denmark    2001          42.21
+314                                            Djibouti    2001          17.50
+339                                               Egypt    2001          21.00
+364                                             Estonia    2001          65.99
+384                                             Finland    2001          74.62
+398                                              France    2001          80.93
+415                                             Georgia    2001          44.52
+429                                             Germany    2001          90.11
+445                                              Greece    2001          47.74
+484                                             Hungary    2001          79.18
+510                          Iran (Islamic Republic of)    2001          15.90
+525                                                Iraq    2001          13.00
+539                                             Ireland    2001          58.90
+553                                              Israel    2001          38.05
+566                                               Italy    2001          46.15
+587                                              Jordan    2001          17.00
+601                                          Kazakhstan    2001          69.69
+                                                ...     ...            ...
+770                                             Morocco    2001           8.70
+787                                         Netherlands    2001          46.51
+812                                              Norway    2001          38.17
+827                                                Oman    2001          21.00
+842                                            Pakistan    2001           6.60
+885                                            Portugal    2001          36.49
+900                                               Qatar    2001          24.20
+916                                 Republic of Moldova    2001          58.88
+930                                             Romania    2001          77.37
+944                                  Russian Federation    2001         108.30
+969                                        Saudi Arabia    2001          32.30
+997                                            Slovakia    2001          76.69
+1011                                           Slovenia    2001          51.64
+1019                                            Somalia    2001           4.20
+1034                                              Spain    2001          36.04
+1049                                 Sudan (until 2011)    2001           7.40
+1066                                             Sweden    2001          32.74
+1080                                        Switzerland    2001          60.39
+1095                               Syrian Arab Republic    2001          14.00
+1109                                         Tajikistan    2001          63.98
+1124          The former Yugoslav Republic of Macedonia    2001          49.36
+1150                                            Tunisia    2001          17.30
+1164                                             Turkey    2001          21.60
+1178                                       Turkmenistan    2001          83.53
+1180                                             Tuvalu    2001          56.00
+1195                                            Ukraine    2001          87.91
+1209                               United Arab Emirates    2001          22.80
+1223  United Kingdom of Great Britain and Northern I...    2001          40.41
+1248                                         Uzbekistan    2001          53.40
+1269                                              Yemen    2001           5.90
+
+[68 rows x 3 columns]
+
+
+--------------[ OUTPUT for 2002 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+13                                          Afghanistan    2002           3.90
+26                                              Albania    2002          31.41
+54                                              Armenia    2002          43.48
+70                                              Austria    2002          78.06
+84                                           Azerbaijan    2002          84.05
+105                                             Bahrain    2002          28.60
+126                                             Belarus    2002         119.40
+141                                             Belgium    2002          75.75
+169                              Bosnia and Herzegovina    2002          32.06
+194                                            Bulgaria    2002          64.85
+250                                             Croatia    2002          56.69
+270                                              Cyprus    2002          43.57
+285                                             Czechia    2002          77.62
+301                                             Denmark    2002          42.87
+313                                            Djibouti    2002          17.50
+338                                               Egypt    2002          21.00
+363                                             Estonia    2002          59.80
+383                                             Finland    2002          73.51
+397                                              France    2002          79.67
+414                                             Georgia    2002          41.98
+428                                             Germany    2002          88.74
+444                                              Greece    2002          47.13
+483                                             Hungary    2002          79.11
+509                          Iran (Islamic Republic of)    2002          16.30
+524                                                Iraq    2002          12.70
+538                                             Ireland    2002          58.03
+552                                              Israel    2002          37.58
+565                                               Italy    2002          44.41
+586                                              Jordan    2002          17.00
+600                                          Kazakhstan    2002          70.18
+                                                ...     ...            ...
+754                                          Montenegro    2002          41.97
+769                                             Morocco    2002          10.90
+786                                         Netherlands    2002          45.71
+811                                              Norway    2002          49.94
+826                                                Oman    2002          20.40
+841                                            Pakistan    2002           6.90
+884                                            Portugal    2002          35.67
+899                                               Qatar    2002          23.60
+915                                 Republic of Moldova    2002          57.71
+929                                             Romania    2002          76.67
+943                                  Russian Federation    2002         107.10
+968                                        Saudi Arabia    2002          22.40
+996                                            Slovakia    2002          75.69
+1010                                           Slovenia    2002          50.84
+1018                                            Somalia    2002           4.20
+1033                                              Spain    2002          35.36
+1048                                 Sudan (until 2011)    2002           7.30
+1065                                             Sweden    2002          31.29
+1079                                        Switzerland    2002          59.45
+1094                               Syrian Arab Republic    2002          13.80
+1108                                         Tajikistan    2002          62.74
+1123          The former Yugoslav Republic of Macedonia    2002          48.36
+1149                                            Tunisia    2002          17.10
+1163                                             Turkey    2002          22.51
+1177                                       Turkmenistan    2002          81.96
+1194                                            Ukraine    2002          88.93
+1208                               United Arab Emirates    2002          21.90
+1222  United Kingdom of Great Britain and Northern I...    2002          39.82
+1247                                         Uzbekistan    2002          55.39
+1268                                              Yemen    2002           5.90
+
+[67 rows x 3 columns]
+
+
+--------------[ OUTPUT for 2003 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+12                                          Afghanistan    2003           3.90
+25                                              Albania    2003          30.66
+53                                              Armenia    2003          44.24
+69                                              Austria    2003          77.36
+83                                           Azerbaijan    2003          82.73
+104                                             Bahrain    2003          28.10
+125                                             Belarus    2003         113.40
+140                                             Belgium    2003          75.08
+168                              Bosnia and Herzegovina    2003          31.67
+193                                            Bulgaria    2003          62.85
+249                                             Croatia    2003          56.12
+269                                              Cyprus    2003          42.68
+284                                             Czechia    2003          77.27
+300                                             Denmark    2003          41.36
+312                                            Djibouti    2003          16.10
+337                                               Egypt    2003          21.70
+362                                             Estonia    2003          57.32
+382                                             Finland    2003          72.43
+396                                              France    2003          77.87
+413                                             Georgia    2003          41.93
+427                                             Germany    2003          87.46
+443                                              Greece    2003          46.96
+482                                             Hungary    2003          78.95
+508                          Iran (Islamic Republic of)    2003          16.30
+523                                                Iraq    2003          13.10
+537                                             Ireland    2003          56.97
+551                                              Israel    2003          38.07
+564                                               Italy    2003          41.59
+585                                              Jordan    2003          17.00
+599                                          Kazakhstan    2003          76.99
+                                                ...     ...            ...
+768                                             Morocco    2003           7.80
+785                                         Netherlands    2003          45.00
+810                                              Norway    2003          49.89
+825                                                Oman    2003          20.40
+840                                            Pakistan    2003           6.80
+872                                              Poland    2003          66.81
+883                                            Portugal    2003          35.82
+898                                               Qatar    2003          23.60
+914                                 Republic of Moldova    2003          66.70
+928                                             Romania    2003          67.46
+942                                  Russian Federation    2003         105.10
+967                                        Saudi Arabia    2003          22.40
+995                                            Slovakia    2003          72.38
+1009                                           Slovenia    2003          49.56
+1017                                            Somalia    2003           4.20
+1032                                              Spain    2003          34.50
+1047                                 Sudan (until 2011)    2003           7.30
+1064                                             Sweden    2003          30.51
+1078                                        Switzerland    2003          58.24
+1093                               Syrian Arab Republic    2003          14.90
+1107                                         Tajikistan    2003          61.22
+1122          The former Yugoslav Republic of Macedonia    2003          48.07
+1148                                            Tunisia    2003          17.10
+1162                                             Turkey    2003          22.37
+1176                                       Turkmenistan    2003          82.68
+1193                                            Ukraine    2003          88.11
+1207                               United Arab Emirates    2003          21.90
+1221  United Kingdom of Great Britain and Northern I...    2003          39.54
+1246                                         Uzbekistan    2003          54.79
+1267                                              Yemen    2003           5.90
+
+[68 rows x 3 columns]
+[ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+ 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49
+ 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68]
+[ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+ 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49
+ 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67]
+[ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+ 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49
+ 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66]
+[ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+ 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49
+ 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67]
