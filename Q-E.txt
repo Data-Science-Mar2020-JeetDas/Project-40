@@ -1,0 +1,30 @@
+
+
+# Question - E :Types of available indicators
+
+indicator = df.groupby(['Indicator'])[['Period']].count()
+print("---------------------------------")
+print("\tAvailable types of indicators : ")
+print("-------------------------------")
+print(indicator)
+print("-------------------------------")
+count = 0
+for row in range(len(indicator)): 
+        count = count+1
+print("total no. of indicators = ",count)        
+print("-----------------------------\n")
+
+
+
+---------------------------------
+        Available types of indicators : 
+-------------------------------
+                                       Period
+Indicator                                    
+Hospital beds (per 10 000 population)    1275
+-------------------------------
+total no. of indicators =  1
+-----------------------------
+
+
+In [55]:
